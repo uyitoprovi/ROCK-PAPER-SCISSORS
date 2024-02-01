@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors Game</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors Game</h1>
+    <button class="btn btn-primary" onclick="startGame()">Play Again</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            class="game-btn"
+            src="rock.jpg"
+            alt="Rock"
+            title="Rock"
+            onclick="play('rock'); updateRoundCount()"
+            data-choice="rock"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            class="game-btn"
+            src="paper.jpg"
+            alt="Paper"
+            title="Paper"
+            onclick="play('paper'); updateRoundCount()"
+            data-choice="paper"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            class="game-btn"
+            src="scissors.jpg"
+            alt="Scissors"
+            title="Scissor"
+            onclick="play('rocscissorsk'); updateRoundCount()"
+            data-choice="scissors"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 mt-4">
+          <h3 id="result" class="result-text"></h3>
+          <p>Round: <span id="roundCount">0</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="row custom-bg-row">
+      <div class="col-md-6">
+        <h5>You</h5>
+        <div class="point-box">Points: <span id="userPoints">0</span></div>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Computer</h5>
+        <div class="point-box">Points: <span id="computerPoints">0</span></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: #f8c5c5;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+
+  .game-btn {
+    cursor: pointer;
+    height: 150px;
+    width: 120px;
+  }
+
+  .result-text {
+    margin-top: 20px;
+    color: rgb(28, 105, 194);
+  }
+
+  .custom-bg-row {
+    width: 90%;
+    background-color: rgb(155, 60, 9);
+    background-size: cover;
+    margin-left: 60px;
+  }
+
+  .win-bg {
+    background-color: rgb(6, 65, 26);
+    color: #ffffff;
+  }
+  
+  .lose-bg {
+    background-color: red;
+    color: #ffffff;
+  }
